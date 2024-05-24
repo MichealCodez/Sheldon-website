@@ -4,6 +4,10 @@
  * Email: madtechnow@gmail.com
  * URL: http://michealcodes.xyz
  */
+
+html {
+  width: 100%;
+}
 article,
 aside,
 details,
