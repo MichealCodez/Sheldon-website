@@ -11,14 +11,14 @@ body {
   overflow-x: hidden;
 }
 
-/* body:before {
+body:before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.85);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: 0.3s all ease;
@@ -34,7 +34,7 @@ body.offcanvas {
 body.offcanvas:before {
   visibility: visible;
   opacity: 1;
-} */
+}
 
 article,
 aside,
