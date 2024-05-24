@@ -4,6 +4,17 @@
  * Email: madtechnow@gmail.com
  * URL: http://michealcodes.xyz
  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 article,
 aside,
 details,
@@ -2532,8 +2543,4 @@ address a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-* {
-  overflow-x: hidden;
 }
