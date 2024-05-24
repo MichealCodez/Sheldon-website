@@ -4,16 +4,36 @@
  * Email: madtechnow@gmail.com
  * URL: http://michealcodes.xyz
  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html,
 body {
   position: relative;
   overflow-x: hidden;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  z-index: 8;
+}
+
+body.offcanvas {
+  overflow: hidden;
+}
+
+body.offcanvas:before {
+  visibility: visible;
+  opacity: 1;
 }
 
 article,
