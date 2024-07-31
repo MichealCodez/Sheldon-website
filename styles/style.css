@@ -469,23 +469,39 @@ form input[type="submit"]:focus {
 }
 
 .send-email {
-  max-width: 30%;
+  max-width: 100%;
 }
 
 .send-email-cont {
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
+}
+
+.email-main-cont {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .email-link {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 35%;
 }
 
 .send-email-text {
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 /* feature */
@@ -2591,3 +2607,4 @@ address a {
   justify-content: space-between;
   width: 100%;
 }
+
