@@ -486,7 +486,7 @@ form input[type="submit"]:focus {
   align-items: center;
 }
 
-.row {
+.new-row {
   display: flex;
   justify-content: center;
   align-items: center;
