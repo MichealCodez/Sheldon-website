@@ -428,38 +428,61 @@ form input[type="submit"]:focus {
 /* section description */
 .section-desc {
   text-align: center;
-  margin-top: 0;
+  margin-top: -5%;
   margin-bottom: 50px;
+  line-height: 1.6em;
+  font-size: large;
 }
 
 /* Counter */
 .counter {
-  margin-bottom: 30px;
   border-right: 1px solid #dadada;
   text-align: center;
+  margin-bottom: 5%;
+  width: 100px;
 }
+
+/* Brands */
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 @media screen and (max-width: 640px) {
-  .counter {
+  .brands {
     border-right: none;
   }
 }
-.counter.last {
+.brands.last {
   border-right: none;
 }
-.counter .counter-icon {
-  margin-bottom: 20px;
+.brands-logo {
+  min-height: 75%;
+  max-height: 85%;
+  min-width: 60%;
+  max-width: 80%;
+  width: 70%;
 }
-.counter .counter-num {
-  font-size: 72px;
-  font-size: 4.5em;
-  margin-bottom: 0;
-  color: #f63f3f;
-  line-height: 70px;
+
+.send-email {
+  max-width: 75%;
 }
-.counter .counter-label {
-  font-size: 18px;
-  font-size: 1.125em;
-  font-family: "Titillium Web", "Open Sans", sans-serif;
+
+.send-email-cont {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+}
+
+.send-email-text {
+  font-weight: normal;
+  font-size: 2em;
 }
 
 /* feature */
