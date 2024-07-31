@@ -440,6 +440,9 @@ form input[type="submit"]:focus {
   text-align: center;
   margin-bottom: 5%;
   width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Brands */
@@ -458,11 +461,11 @@ form input[type="submit"]:focus {
   border-right: none;
 }
 .brands-logo {
-  min-height: 75%;
+  min-height: 55%;
   max-height: 85%;
   min-width: 60%;
   max-width: 80%;
-  width: 70%;
+  width: 80%;
 }
 
 .send-email {
