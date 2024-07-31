@@ -480,7 +480,7 @@ form input[type="submit"]:focus {
 }
 
 .email-main-cont {
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
