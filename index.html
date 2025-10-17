@@ -32,6 +32,7 @@
   </head>
 
   <body class="header-collapse">
+    <div id="notification" class="notification hidden"></div>
     <div id="site-content">
       <header class="site-header" id="navbar">
         <div class="container">
@@ -132,7 +133,7 @@
               <br />however we are also able to program via laptop and J2534 or Enet cable (OBD2 to ethernet) depending on vehicle.
             </p>
 
-            <div class="row">
+            <!-- <div class="row">
               <h4 class="section-title">Brands We Cover</h4>
               <div class="brands-cont">
                 <div class="brands">
@@ -182,7 +183,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- .container -->
           <!-- .fullwidth-block -->
 
@@ -318,15 +319,17 @@
 
               <div class="row new-row">
                 <div class="col-md-5">
-                  <form action="#" class="contact-form">
-                    <input type="text" id="name" placeholder="Name..." />
-                    <input type="text" id="email" placeholder="Email..." />
-                    <input type="text" id="subject" placeholder="Subject..." />
-                    <textarea
-                      name=""
-                      id="message"
-                      placeholder="Message..."
-                    ></textarea>
+                  <form method="post" class="contact-form">
+                    {% csrf_token %}
+                    <input type="text" id="name" placeholder="Name..." name="name" value="{{ form.name.value }}" required/>
+                    <div class="error">{{ form.name.errors }}</div>
+                    <input type="email" id="email" placeholder="Email..." name="email" value="{{ form.email.value }}" required/>
+                    <div class="error">{{ form.email.errors }}</div>
+                    <input type="text" id="subject" placeholder="Subject..." name="subject" value="{{ form.subject.value }}" required/>
+                    <div class="error">{{ form.subject.errors }}</div>
+                    <textarea id="message" placeholder="Message..." name="message" required>
+                      {{ form.message.value }}
+                    </textarea>
                     <div class="text-right">
                       <input type="submit" value="Send message" />
                     </div>
